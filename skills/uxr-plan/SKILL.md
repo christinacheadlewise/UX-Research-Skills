@@ -83,6 +83,19 @@ Once Christina approves:
 
 If yes, add the study to the In Progress table on both the hub (4125630194) and Active Studies (4125182953) pages with a blue "Planning" status lozenge.
 
+## Output Standards (Extreme Clarity)
+
+All generated research plans must follow these rules:
+
+1. **Brevity.** Every sentence must earn its place. Cut filler.
+2. **No unexpanded acronyms.** First use: "Customer Effort Score (CES)". Then "CES".
+3. **Numbered lists** for research questions, risks, and any sequenced items.
+4. **Absolute + relative metrics.** "n = 10 (5 from branch, 5 from in-app survey)" not just "10 participants".
+5. **Deep link.** Link to referenced pages, docs, or tools — don't describe what a reader could click.
+6. **Explicit units.** Always state timeframes ("w/c 26 May"), durations ("60-min sessions"), and sample sizes ("n = 20").
+7. **State changes.** If this research is a follow-up, say what was known before and what gap remains.
+8. **Proof-read.** Before presenting the plan, re-read every sentence. If it could be interpreted two ways, rewrite it.
+
 ## Questioning Style
 
 - One question at a time. Never dump a list.

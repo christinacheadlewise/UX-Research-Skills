@@ -77,6 +77,13 @@ Standard status options (for reference when filling):
 - **Cancelled** — withdrew before session
 - **No Show** — didn't attend
 
+## Output Standards (Extreme Clarity)
+
+1. **Column headers must be unambiguous.** "Age Range (years)" not "Age". "Device (primary)" not "Device".
+2. **Status values are predefined.** List all valid options in the header row or a legend — no free text for status.
+3. **Explicit units.** Time columns include timezone ("14:00 BST"). Date columns use full format ("27 May 2026").
+4. **No acronyms in column headers** unless universally known within the team.
+
 ## Questioning Style
 
 - One question at a time

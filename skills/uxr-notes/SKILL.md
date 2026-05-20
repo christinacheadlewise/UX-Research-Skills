@@ -83,6 +83,14 @@ If a recruitment grid already exists for this study (check working directory for
 - Offer to pull participant numbers and pseudonyms from it
 - "I found your recruit grid — want me to pre-fill the participant list from there?"
 
+## Output Standards (Extreme Clarity)
+
+1. **Column headers must be unambiguous.** "Warm-Up: Financial Life" not "Warm-Up". "Prototype Reaction (Task 2)" not "Prototype".
+2. **Numbered lists** for any sequenced items in instructions or confirmations.
+3. **Explicit units.** Session dates use full format ("27 May 2026"). Times include timezone if relevant.
+4. **No acronyms in column headers** unless universally known within the team.
+5. **Proof-read.** Before presenting, check that no column name could be misread by an observer unfamiliar with the study.
+
 ## Questioning Style
 
 - One question at a time

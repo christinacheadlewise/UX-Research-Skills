@@ -106,6 +106,16 @@ If text output:
 - **Recommendations:** Actionable. Start with a bold label that a PM could put on a ticket.
 - **Length:** Aim for readable in 2 minutes. 3-5 insights max. If there are more, pick the most impactful.
 
+## Output Standards (Extreme Clarity)
+
+1. **Prioritise brevity.** TL;DR bullets should be punchy — one finding per line.
+2. **No unexpanded acronyms.** First use: "Customer Effort Score (CES)". Then "CES" is fine.
+3. **Absolute + relative metrics.** "7 of 10 participants (70%)" not just "most participants".
+4. **Deep link.** Always link to the full deck/report — never describe where to find it.
+5. **Explicit units.** Always state sample size, method, and timeframe in the methodology section.
+6. **State changes.** If this builds on prior research, say what was known before and what's new.
+7. **Proof-read.** Before presenting, re-read every bullet. If it could be interpreted two ways, rewrite it.
+
 ## Tone
 
 - Confident but not academic

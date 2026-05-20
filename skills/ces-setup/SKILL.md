@@ -116,6 +116,13 @@ Confirm: "Slack posted, Confluence updated."
 
 ---
 
+## Output Standards (Extreme Clarity)
+
+1. **Explicit units.** Always state full dates ("Tuesday 26 May 2026"), times with format ("14:00"), and durations ("30-minute sessions").
+2. **No unexpanded acronyms.** "Customer Effort Score (CES)" on first use in Slack posts. Then "CES" is fine.
+3. **Deep link.** Calendar links and Confluence links must be clickable — never describe where to find them.
+4. **Proof-read.** Before sending any Slack draft, re-read for ambiguity. If a sentence could be read two ways, rewrite it.
+
 ## Confluence Details
 
 - Cloud ID: `6c85b940-0f26-4355-9ba6-61ca2d0ce603`

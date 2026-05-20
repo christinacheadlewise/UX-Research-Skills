@@ -115,6 +115,17 @@ Confirm: "Published to Confluence and posted to Slack."
 
 ---
 
+## Output Standards (Extreme Clarity)
+
+1. **Prioritise brevity.** Findings are 2-3 sentences max. Slack version is one line per finding.
+2. **No unexpanded acronyms.** First use: "Customer Effort Score (CES)". Then "CES" is fine.
+3. **Absolute + relative metrics.** "3 of 4 participants (75%)" not "most participants".
+4. **Numbered lists** for findings and recommendations.
+5. **Deep link.** Always include the Confluence page link in Slack posts. Link to related prior CES summaries when referencing patterns.
+6. **Explicit units.** Always state sample size ("n = 4"), session length ("30-minute sessions"), and timeframe ("May 2026").
+7. **State changes.** If a finding reinforces or contradicts prior months, say what was known before and what's new.
+8. **Proof-read.** Before presenting, re-read every finding. If it could be interpreted two ways, rewrite it.
+
 ## Rules
 
 - Keep summaries brief — this is rolling research, not a deep-dive. 1 page max.

@@ -127,6 +127,18 @@ Use a mix:
 - Space ID: `1097630102`
 - Christina's Account ID: `712020:fd1bc9ec-14f4-4a60-8912-f251a32e1b6f`
 
+## Output Standards (Extreme Clarity)
+
+All generated discussion guides must follow these rules:
+
+1. **Brevity.** Questions should be short and open-ended. Cut preamble.
+2. **No unexpanded acronyms.** Spell out on first use, even in moderator notes.
+3. **Numbered lists** for questions within each section (enables "skip to Q3" references).
+4. **Explicit units.** Every section has a time allocation in minutes. Total must equal session length.
+5. **Deep link.** If referencing stimulus or prototypes, link directly — don't describe where to find them.
+6. **State changes.** If a section builds on a previous one, the moderator note should say what to carry forward.
+7. **Proof-read.** Before presenting, check that no question could be misread by a moderator unfamiliar with the study.
+
 ## Questioning Style
 
 - One question at a time

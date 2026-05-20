@@ -108,6 +108,14 @@ To warm up:
 
 ---
 
+## Output Standards (Extreme Clarity)
+
+1. **Brevity.** Questions must be short and open-ended. Cut preamble.
+2. **No unexpanded acronyms.** Spell out on first use, even in moderator notes.
+3. **Numbered lists** for questions within each section (enables "skip to Q3" references).
+4. **Explicit units.** Every section has a time allocation in minutes. Total must equal 30 minutes.
+5. **Proof-read.** Before presenting, check that no question could be misread by a moderator unfamiliar with the study.
+
 ## Rules
 
 - Intro and Conclusion sections are FIXED. Never modify them unless Christina explicitly asks.

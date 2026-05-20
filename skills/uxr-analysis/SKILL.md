@@ -166,6 +166,16 @@ When Christina's had enough or the thinking feels solid:
 
 ---
 
+## Output Standards (Extreme Clarity)
+
+1. **Prioritise brevity.** Codes should be 3-6 words. Theme summaries 2-3 sentences max.
+2. **No unexpanded acronyms.** First use: "Customer Effort Score (CES)". Then "CES" is fine.
+3. **Absolute + relative metrics.** Always state how many participants expressed a theme: "4 of 6 participants (67%)" not "most participants".
+4. **Numbered lists** for themes, challenges, and sequenced items. Enables precise referencing.
+5. **Deep link.** When connecting to past research, link to the Confluence page — never describe where to find it.
+6. **State changes.** When presenting findings, say what was known before and what's new or different.
+7. **Proof-read.** Before presenting themes or challenges, re-read for ambiguity. If a finding could be interpreted two ways, rewrite it.
+
 ## General Rules
 
 - Never hallucinate data, quotes, or findings. If you don't have the transcript, say so.

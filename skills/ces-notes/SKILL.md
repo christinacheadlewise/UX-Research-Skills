@@ -48,6 +48,13 @@ Save and confirm: "Notes grid saved to `[filename]`. Four rows, ready to fill du
 
 ---
 
+## Output Standards (Extreme Clarity)
+
+1. **Column headers must be unambiguous.** "[Topic]: Q1 (brief label)" not just "Q1".
+2. **Explicit units.** Times include format ("14:00"). Dates use full format ("27 May 2026") in filenames and confirmations.
+3. **No acronyms in column headers** unless universally known within the team.
+4. **Proof-read.** Before saving, check that no column name could be misread by an observer unfamiliar with the study.
+
 ## Rules
 
 - Always 4 rows (4 sessions)
