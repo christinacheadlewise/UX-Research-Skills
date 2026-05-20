@@ -22,16 +22,16 @@ When the user says "uxr analysis", "analyse this", "code this", "run analysis", 
 - Read and follow the instructions in `skills/uxr-analysis/SKILL.md`
 
 When the user says "ces setup", "set up ces", "ces this month", "ces kickoff", "monthly ces", "push ces links", or "ces links":
-- Read and follow the instructions in `skills/ces-setup/SKILL.md`
+- Read and follow the instructions in `CES/ces-setup/SKILL.md`
 
 When the user says "ces guide", "update ces guide", "tweak the ces questions", or "ces middle questions":
-- Read and follow the instructions in `skills/ces-guide/SKILL.md`
+- Read and follow the instructions in `CES/ces-guide/SKILL.md`
 
 When the user says "ces notes", "ces notes doc", or "set up ces notes":
-- Read and follow the instructions in `skills/ces-notes/SKILL.md`
+- Read and follow the instructions in `CES/ces-notes/SKILL.md`
 
 When the user says "ces summary", "summarise ces", "ces write-up", "ces transcripts", or "write up ces":
-- Read and follow the instructions in `skills/ces-summary/SKILL.md`
+- Read and follow the instructions in `CES/ces-summary/SKILL.md`
 
 When the user says "uxr slack", "write a slack summary", "slack post", "share this research", "write up for slack", or "summarise this deck for slack":
 - Read and follow the instructions in `skills/uxr-slack/SKILL.md`

@@ -11,7 +11,7 @@ Generates a notes grid for the 4 CES sessions. Pulls columns from the current CE
 
 ### Step 1: Read the Guide
 
-Check for `ces-discussion-guide.md` in the working directory.
+Check for `CES/[Month Year]/ces-discussion-guide.md`.
 
 - If found: extract section names (Intro, Core Questions topic, Conclusion)
 - If not found: ask Christina what the sections are

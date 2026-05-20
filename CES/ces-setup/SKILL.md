@@ -21,23 +21,33 @@ Triggers when Christina says "ces setup" 4 days before sessions (e.g., Monday if
 
 If different, collect the actual date and times.
 
-#### Step 2: Create Recruitment Grid
+#### Step 2: Create Monthly Confluence Page
+
+Create a child page under **CES Rolling Research** (4125091326):
+- Title: `[Mon] '[YY] - CES Rolling Research` (e.g., "May '26 - CES Rolling Research")
+- Content: placeholder for summary + sessions table + focus topic
+- This page becomes the parent for the discussion guide and eventual summary
+
+Store the new page ID — all other CES pages this month (discussion guide, summary) are children of this page.
+
+#### Step 3: Create Recruitment Grid
 
 Generate a CSV: `ces-[month]-[year]-recruit.csv`
 
 ```csv
-Slot,Time,Name,Email,Consent Sent,Consent Signed,Status,Paid,Notes
-1,14:00,,,No,No,Awaiting Response,No,
-2,14:30,,,No,No,Awaiting Response,No,
-3,15:00,,,No,No,Awaiting Response,No,
-4,15:30,,,No,No,Awaiting Response,No,
+Slot,Time,User ID,Email,Pseudonym,Score,Drop-Off Point,Comments,Country,Consent Form,Status
+1,14:00,,,,,,,,,Upcoming
+2,14:30,,,,,,,,,Upcoming
+3,15:00,,,,,,,,,Upcoming
+4,15:30,,,,,,,,,Upcoming
 ```
 
-**Status values:** Awaiting Response / Confirmed / Cancelled / No Show / Completed
+**Consent Form values (dropdown):** Not Sent / Sent / Signed
+**Status values (dropdown):** Upcoming / Paid / Cancelled / No Show
 
-Save to working directory. Confirm: "Grid saved to `[filename]`."
+Save to `CES/[Month Year]/` directory (create if it doesn't exist). Confirm: "Grid saved to `CES/[Month Year]/[filename]`."
 
-#### Step 3: Draft Slack Question
+#### Step 4: Draft Slack Question
 
 Draft the message and send it to Christina as a DM (U0AK82NPKJA) for review BEFORE posting to any channel:
 
@@ -62,7 +72,7 @@ What do you want me to dig into this month? Drop your questions/topics in the th
 
 When approved, ask which channel to post to (default: #onboarding-squad-public / C04KLT41GN5, but she may want #consumer-onboarding-private / G5EAY3A2K instead). Then post and confirm with link.
 
-#### Step 4: Wrap
+#### Step 5: Wrap
 
 > "Kickoff done. Grid's ready, Slack question's posted. Come back day-before to push session links, or say 'ces setup' again when you've got them."
 

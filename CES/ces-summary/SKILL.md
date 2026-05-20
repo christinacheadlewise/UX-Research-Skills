@@ -69,9 +69,10 @@ Present for review:
 
 Once approved:
 
-1. Create a child page under **CES Rolling Research** (4125091326):
-   - Title: `CES Rolling Research — [Month Year]`
-   - Content: the summary in HTML format
+1. Update the **monthly CES page** (e.g., "CES Rolling Research — May 2026") with the summary content:
+   - The monthly page is created by `ces-setup` — titled `[Mon] '[YY] - CES Rolling Research` (e.g., "May '26 - CES Rolling Research")
+   - Replace the placeholder text with the full summary in HTML format
+   - Follow wipe guard rules (read page first, compare lengths)
 
 2. Update the **Past Summaries table** on the CES Rolling Research parent page (4125091326):
    - Read the page first (wipe guard)

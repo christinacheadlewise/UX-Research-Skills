@@ -13,7 +13,7 @@ A living discussion guide for CES Rolling Research. The intro and conclusion sta
 
 > "Updating the CES guide for this month? Let me check what's there."
 
-Look for `ces-discussion-guide.md` in the working directory.
+Look for `CES/[Month Year]/ces-discussion-guide.md`.
 
 - If it exists: read it, show the current middle section, ask what to change
 - If it doesn't exist: create from the template below
@@ -37,11 +37,24 @@ Generate 3-5 main questions with probes for the monthly focus area. Present for 
 
 Iterate until approved.
 
-### Step 4: Save
+### Step 4: Save & Publish
 
-Save to `ces-discussion-guide.md` (overwrite the middle section, keep intro/conclusion intact).
+Once Christina approves:
 
-Confirm: "Guide updated for [month]. Middle section now covers [topic]."
+1. Save to `CES/[Month Year]/ces-discussion-guide.md` (overwrite the middle section, keep intro/conclusion intact)
+2. Publish to Confluence as a child page under the **monthly CES page** (e.g., "CES Rolling Research — May 2026"):
+   - Title: `Discussion Guide: CES Rolling Research — [Month Year]`
+   - The monthly page is created by `ces-setup` — titled `[Mon] '[YY] - CES Rolling Research` (e.g., "May '26 - CES Rolling Research")
+   - If a guide page already exists for this month, update it (follow wipe guard rules)
+   - If not, create a new child page
+3. Confirm: "Guide updated for [month] — saved locally and published to Confluence: [link]"
+
+## Confluence Details
+
+- Cloud ID: `6c85b940-0f26-4355-9ba6-61ca2d0ce603`
+- Space ID: `1097630102`
+- CES parent page: `4125091326`
+- Monthly pages are children of the CES parent page, titled `CES Rolling Research — [Month Year]`
 
 ---
 
