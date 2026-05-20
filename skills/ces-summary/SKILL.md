@@ -67,14 +67,27 @@ Present for review:
 
 ### Step 4: Publish to Confluence
 
-Once approved, create a child page under the CES research page (or Active Studies if no CES parent exists):
+Once approved:
 
-- Title: `CES Rolling Research — [Month Year]`
-- Content: the summary in HTML format
+1. Create a child page under **CES Rolling Research** (4125091326):
+   - Title: `CES Rolling Research — [Month Year]`
+   - Content: the summary in HTML format
 
-Also update the Research Repository table if this is a new entry.
+2. Update the **Past Summaries table** on the CES Rolling Research parent page (4125091326):
+   - Read the page first (wipe guard)
+   - Add a new row to the table: Month | Topic | Link to child page (smart link)
 
-Follow wipe guard rules for any page updates.
+3. Optionally update the Research Repository table (4125116067) if Christina wants it listed there too.
+
+Follow wipe guard rules for all page updates.
+
+## Confluence Details
+
+- Cloud ID: `6c85b940-0f26-4355-9ba6-61ca2d0ce603`
+- Space ID: `1097630102`
+- CES parent page: `4125091326`
+- Research Repository: `4125116067`
+- Hub page: `4125630194`
 
 ### Step 5: Post to Slack
 
