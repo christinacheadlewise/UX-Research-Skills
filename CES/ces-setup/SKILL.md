@@ -72,9 +72,16 @@ What do you want me to dig into this month? Drop your questions/topics in the th
 
 When approved, ask which channel to post to (default: #onboarding-squad-public / C04KLT41GN5, but she may want #consumer-onboarding-private / G5EAY3A2K instead). Then post and confirm with link.
 
-#### Step 5: Wrap
+#### Step 5: Schedule Links Reminder
 
-> "Kickoff done. Grid's ready, Slack question's posted. Come back day-before to push session links, or say 'ces setup' again when you've got them."
+Schedule a Slack DM to Christina (U0AK82NPKJA) for the working day before sessions at 10:00 AM:
+- If sessions are Friday → remind Thursday
+- If sessions are Tuesday → remind Friday (skip bank holiday Monday)
+- Message: "👋 Reminder: CES sessions are tomorrow. Time to push the calendar links — say `ces links` when you've got them and I'll post to #current-account-onboarding + update Confluence."
+
+#### Step 6: Wrap
+
+> "Kickoff done. Grid's ready, Slack question's posted. You'll get a reminder on [day] to send me the calendar links."
 
 ---
 
