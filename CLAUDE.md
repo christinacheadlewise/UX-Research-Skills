@@ -11,9 +11,15 @@ When the user says "uxr plan", "new research plan", "write a research plan", "pl
 When the user says "uxr grid", "recruitment grid", "make a recruit grid", "participant tracker", or "screening grid":
 - Read and follow the instructions in `skills/uxr-grid/SKILL.md`
 
+When the user says "uxr notes", "notes grid", "analysis grid", "session notes template", "make a notes doc", or "observation grid":
+- Read and follow the instructions in `skills/uxr-notes/SKILL.md`
+
 When the user says "uxr guide", "write a discussion guide", "new discussion guide", "create a guide", or "build a moderator guide":
 - Read and follow the instructions in `skills/uxr-guide/SKILL.md`
 - Reference files are in `skills/uxr-guide/references/`
+
+When the user says "uxr slack", "write a slack summary", "slack post", "share this research", "write up for slack", or "summarise this deck for slack":
+- Read and follow the instructions in `skills/uxr-slack/SKILL.md`
 
 When the user says "uxr update", "weekly update", "update confluence", "monday update", or this fires from a Monday cron:
 - Read and follow the instructions in `skills/uxr-update/SKILL.md`
