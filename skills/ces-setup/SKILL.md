@@ -11,9 +11,9 @@ CES Rolling Research runs monthly. Default schedule: last Friday of the month, 4
 
 This skill runs twice per month:
 
-### Pass 1: Monday Before Sessions (Kickoff)
+### Pass 1: 4 Days Before Sessions (Kickoff)
 
-Triggers when Christina says "ces setup" on the Monday before sessions.
+Triggers when Christina says "ces setup" 4 days before sessions (e.g., Monday if sessions are Friday, Friday if sessions shift to Tuesday).
 
 #### Step 1: Confirm Schedule
 
@@ -56,6 +56,13 @@ Use `slack_send_message` to post. Confirm with link.
 #### Step 4: Wrap
 
 > "Kickoff done. Grid's ready, Slack question's posted. Come back day-before to push session links, or say 'ces setup' again when you've got them."
+
+---
+
+## Timing
+
+- **Kickoff (Pass 1):** 4 days before sessions. If sessions are Friday → kickoff Monday. If sessions shift to Tuesday → kickoff Friday.
+- **Links (Pass 2):** Day before sessions.
 
 ---
 

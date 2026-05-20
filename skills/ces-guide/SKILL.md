@@ -22,7 +22,7 @@ Look for `ces-discussion-guide.md` in the working directory.
 
 > "What's the focus this month? I can pull from the Slack thread if you've already posted the question, or you can tell me directly."
 
-If pulling from Slack:
+If pulling from Slack (typically posted 4 days before sessions):
 - Read recent messages in #onboarding-squad-public for the CES thread
 - Extract suggested topics/questions
 - Present: "Here's what the squad asked about: [list]. Want to use all of these or pick?"
