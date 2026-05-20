@@ -37,21 +37,30 @@ Slot,Time,Name,Email,Consent Sent,Consent Signed,Status,Paid,Notes
 
 Save to working directory. Confirm: "Grid saved to `[filename]`."
 
-#### Step 3: Post Slack Question
+#### Step 3: Draft Slack Question
 
-Post to #onboarding-squad-public:
+Draft the message and send it to Christina as a DM (U0AK82NPKJA) for review BEFORE posting to any channel:
 
 ```
-🔬 **CES Interviews — [Month]**
+🔬 **CES Rolling Research Sessions — [Month]**
 
-Rolling research sessions are this [day], [date]. I've got 4 slots with customers who recently went through onboarding.
+I've got 4 slots this [day], [date] with customers who recently went through onboarding.
 
-Standard intro + wrap stays the same. What do you want me to dig into this month? Drop your questions/topics in the thread 👇
+• 2:00pm
+• 2:30pm
+• 3:00pm
+• 3:30pm
 
-(Last month we explored: [topic from previous month if known])
+I've added these to the Consumer Onboarding calendar. Viewing links will be generated the day before.
+
+What do you want me to dig into this month? Drop your questions/topics in the thread 👇
 ```
 
-Use `slack_send_message` to post. Confirm with link.
+> "Sent you a draft in Slack DMs — check it and tell me what to tweak or say 'push' to post."
+
+**NEVER post to a channel without Christina's explicit approval.** Iterate on the draft until she says to push it.
+
+When approved, ask which channel to post to (default: #onboarding-squad-public / C04KLT41GN5, but she may want #consumer-onboarding-private / G5EAY3A2K instead). Then post and confirm with link.
 
 #### Step 4: Wrap
 
