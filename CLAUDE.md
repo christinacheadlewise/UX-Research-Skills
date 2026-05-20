@@ -18,6 +18,9 @@ When the user says "uxr guide", "write a discussion guide", "new discussion guid
 - Read and follow the instructions in `skills/uxr-guide/SKILL.md`
 - Reference files are in `skills/uxr-guide/references/`
 
+When the user says "uxr analysis", "analyse this", "code this", "run analysis", "what are the themes", "challenge me", "devil's advocate", or "push back on this":
+- Read and follow the instructions in `skills/uxr-analysis/SKILL.md`
+
 When the user says "uxr slack", "write a slack summary", "slack post", "share this research", "write up for slack", or "summarise this deck for slack":
 - Read and follow the instructions in `skills/uxr-slack/SKILL.md`
 
