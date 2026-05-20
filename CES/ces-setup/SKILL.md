@@ -109,8 +109,14 @@ Come observe! Here are the session links:
 • 3:00pm — [link]
 • 3:30pm — [link]
 
-DM me if you want context on what we're exploring this month. No prep needed to observe.
+📝 Want to take notes? Notes doc is here: [Google Sheets link]
+
+Feel free to ping me on Slack during the interviews if you want me to ask something!
+
+💡 **What is this?** Every month I run 4 short interviews with customers who recently completed our Customer Effort Score (CES) survey. It's a chance to hear directly about their onboarding experience. More info: [CES Rolling Research Confluence link]
 ```
+
+Post to **#current-account-onboarding** (search for channel ID via `slack_search_channels` on first use).
 
 #### Step 3: Push to Confluence "This Week"
 
