@@ -33,7 +33,7 @@ When the user says "ces notes", "ces notes doc", or "set up ces notes":
 When the user says "ces summary", "summarise ces", "ces write-up", "ces transcripts", or "write up ces":
 - Read and follow the instructions in `CES/ces-summary/SKILL.md`
 
-When the user says "uxr slack", "write a slack summary", "slack post", "share this research", "write up for slack", or "summarise this deck for slack":
+When the user says "uxr summarize", "uxr summary", "summarise this", "write a summary", "share this research", "uxr slack", "write a slack summary", "slack post", or "summarise this deck":
 - Read and follow the instructions in `skills/uxr-slack/SKILL.md`
 
 When the user says "uxr update", "weekly update", "update confluence", "monday update", or this fires from a Monday cron:
@@ -80,6 +80,7 @@ If the user says something related to the UXR hub pages but it doesn't clearly m
 >
 > - **uxr plan** — Write a new research plan and publish it to Confluence
 > - **uxr guide** — Write a discussion guide (pulls from your research plan if one exists)
+> - **uxr summarize** — Generate an executive summary from a deck (posts to Slack + publishes to Confluence)
 > - **uxr update** — Monday refresh: review what's changed, update In Progress/Recently Completed, and sync the repository
 > - **uxr sessions** — Push live session info from Slack into the 'This Week' section on Confluence
 >
