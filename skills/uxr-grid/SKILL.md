@@ -5,7 +5,7 @@ description: Generate a recruitment grid spreadsheet for a research study. Use w
 
 # UXR Grid: Recruitment Grid Generator
 
-This skill generates a structured recruitment/participant tracking grid. Output is a CSV file that can be opened in Google Sheets or Excel.
+This skill generates a structured recruitment/participant tracking grid as a Google Sheet via Credal.
 
 ## Flow
 
@@ -52,21 +52,21 @@ Present a preview as a markdown table:
 ### Step 4: Output
 
 Once approved:
-1. Write the CSV to the current working directory: `[study-name]-recruit-grid.csv`
-2. Pre-fill the Participant # column (P1 through Pn)
+1. Create a Google Sheet via Credal (`create_a_spreadsheet`) titled: `[Study Name] [Month Year] — Recruitment`
+   - 1 sheet called "Recruitment", frozen header row, column count matching the grid
+2. Use `update_a_spreadsheet` to write the header row and pre-fill Participant # column (P1 through Pn)
 3. Leave all other cells empty (ready for filling)
-4. Confirm: "Grid saved to `[filename]`. Open it in Sheets and you're good to go."
+4. Confirm: "Recruitment grid created: [Google Sheet link]"
 
-Optional: "Want me to also create a Google Sheet? (I'd need you to upload the CSV — I can't create Sheets directly)"
+Christina will move the sheet into the study folder on Drive manually.
 
 ## Grid Format
 
-```csv
-Participant,Name,Email,Pseudonym,Status,Session Date/Time,[Variable1],[Variable2],...,Notes
-P1,,,,,,,,
-P2,,,,,,,,
-P3,,,,,,,,
-```
+| Participant | Name | Email | Pseudonym | Status | Session Date/Time | [Variable1] | [Variable2] | ... | Notes |
+|-------------|------|-------|-----------|--------|-------------------|-------------|-------------|-----|-------|
+| P1 | | | | | | | | | |
+| P2 | | | | | | | | | |
+| P3 | | | | | | | | | |
 
 ## Status Values
 

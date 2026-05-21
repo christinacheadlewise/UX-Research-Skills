@@ -30,22 +30,28 @@ Create a child page under **CES Rolling Research** (4125091326):
 
 Store the new page ID — all other CES pages this month (discussion guide, summary) are children of this page.
 
-#### Step 3: Create Recruitment Grid
+#### Step 3: Create Recruitment Grid (Google Sheet)
 
-Generate a CSV: `ces-[month]-[year]-recruit.csv`
+Create a Google Sheet via Credal (`create_a_spreadsheet`) titled: `CES [Month] [Year] — Recruitment`
 
-```csv
-Slot,Time,User ID,Email,Pseudonym,Score,Drop-Off Point,Comments,Country,Consent Form,Status
-1,14:00,,,,,,,,,Upcoming
-2,14:30,,,,,,,,,Upcoming
-3,15:00,,,,,,,,,Upcoming
-4,15:30,,,,,,,,,Upcoming
-```
+Sheet structure (1 sheet called "Recruitment", frozen header row, 11 columns):
 
-**Consent Form values (dropdown):** Not Sent / Sent / Signed
-**Status values (dropdown):** Upcoming / Paid / Cancelled / No Show
+| Slot | Time | User ID | Email | Pseudonym | Score | Drop-Off Point | Comments | Country | Consent Form | Status |
+|------|------|---------|-------|-----------|-------|----------------|----------|---------|--------------|--------|
+| 1 | 14:00 | | | | | | | | Not Sent | Upcoming |
+| 2 | 14:30 | | | | | | | | Not Sent | Upcoming |
+| 3 | 15:00 | | | | | | | | Not Sent | Upcoming |
+| 4 | 15:30 | | | | | | | | Not Sent | Upcoming |
 
-Save to `CES/[Month Year]/` directory (create if it doesn't exist). Confirm: "Grid saved to `CES/[Month Year]/[filename]`."
+After creating the sheet, use `update_a_spreadsheet` to:
+1. Write the header row and 4 data rows
+2. Add data validation on **Consent Form** column (Not Sent / Sent / Signed)
+3. Add data validation on **Status** column (Upcoming / Paid / Cancelled / No Show)
+
+**Consent Form values:** Not Sent / Sent / Signed
+**Status values:** Upcoming / Paid / Cancelled / No Show
+
+Confirm: "Recruitment grid created: [Google Sheet link]"
 
 #### Step 4: Draft Slack Question
 

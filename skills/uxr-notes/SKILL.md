@@ -5,7 +5,7 @@ description: Generate a notes/analysis spreadsheet for a research study. Rows ar
 
 # UXR Notes: Session Notes Grid Generator
 
-This skill generates a structured notes spreadsheet where rows = participants and columns = discussion guide sections. Output is a CSV that can be opened in Google Sheets.
+This skill generates a structured notes spreadsheet where rows = participants and columns = discussion guide sections. Output is a Google Sheet via Credal.
 
 ## Flow
 
@@ -56,20 +56,22 @@ Build a CSV with:
 ### Step 4: Output
 
 Once approved:
-1. Write the CSV to the current working directory: `[study-name]-notes-grid.csv`
-2. Pre-fill Participant # column (P1 through Pn)
+1. Create a Google Sheet via Credal (`create_a_spreadsheet`) titled: `[Study Name] [Month Year] — Notes`
+   - 1 sheet called "Notes", frozen header row, column count matching the grid
+2. Use `update_a_spreadsheet` to write the header row and pre-fill Participant # column (P1 through Pn)
 3. If pseudonyms are known from the recruitment grid, pre-fill those too
 4. Leave all note cells empty
-5. Confirm: "Grid saved to `[filename]`. Open it in Sheets — one row per session, fill as you go."
+5. Confirm: "Notes grid created: [Google Sheet link]. One row per session, fill as you go."
+
+Christina will move the sheet into the study folder on Drive manually.
 
 ## Grid Format
 
-```csv
-Participant,Pseudonym,Session Date,[Section 1: Name],[Section 2: Name],...,Other,Key Quotes,Observer Notes
-P1,,,,,,,,
-P2,,,,,,,,
-P3,,,,,,,,
-```
+| Participant | Pseudonym | Session Date | [Section 1: Name] | [Section 2: Name] | ... | Other | Key Quotes | Observer Notes |
+|-------------|-----------|--------------|--------------------|--------------------|-----|-------|------------|----------------|
+| P1 | | | | | | | | |
+| P2 | | | | | | | | |
+| P3 | | | | | | | | |
 
 ## Column Naming
 
@@ -79,9 +81,9 @@ P3,,,,,,,,
 
 ## Linking to Recruitment Grid
 
-If a recruitment grid already exists for this study (check working directory for `*-recruit-grid.csv`):
+If a recruitment Google Sheet already exists for this study (ask Christina or search Drive via Credal):
 - Offer to pull participant numbers and pseudonyms from it
-- "I found your recruit grid — want me to pre-fill the participant list from there?"
+- "Is there a recruitment sheet for this study? I can pre-fill the participant list from it."
 
 ## Output Standards (Extreme Clarity)
 

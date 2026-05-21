@@ -16,17 +16,18 @@ Check for `CES/[Month Year]/ces-discussion-guide.md`.
 - If found: extract section names (Intro, Core Questions topic, Conclusion)
 - If not found: ask Christina what the sections are
 
-### Step 2: Generate the Grid
+### Step 2: Generate the Grid (Google Sheet)
 
-Build a CSV: `ces-[month]-[year]-notes.csv`
+Create a Google Sheet via Credal (`create_a_spreadsheet`) titled: `CES [Month] [Year] — Session Notes`
 
-```csv
-Slot,Time,Pseudonym,Warm-Up (Use Case + History),[Core Topic]: Q1,[Core Topic]: Q2,[Core Topic]: Q3,One Thing to Change,Other,Key Quotes
-1,14:00,,,,,,,,
-2,14:30,,,,,,,,
-3,15:00,,,,,,,,
-4,15:30,,,,,,,,
-```
+Sheet structure (1 sheet called "Notes", frozen header row):
+
+| Slot | Time | Pseudonym | Warm-Up (Use Case + History) | [Core Topic]: Q1 | [Core Topic]: Q2 | [Core Topic]: Q3 | One Thing to Change | Other | Key Quotes |
+|------|------|-----------|------------------------------|-------------------|-------------------|-------------------|---------------------|-------|------------|
+| 1 | 14:00 | | | | | | | | |
+| 2 | 14:30 | | | | | | | | |
+| 3 | 15:00 | | | | | | | | |
+| 4 | 15:30 | | | | | | | | |
 
 **Fixed columns:**
 - Slot (1-4)
@@ -42,9 +43,11 @@ Slot,Time,Pseudonym,Warm-Up (Use Case + History),[Core Topic]: Q1,[Core Topic]: 
 - Other
 - Key Quotes
 
+After creating the sheet, use `update_a_spreadsheet` to write the header row and 4 data rows.
+
 ### Step 3: Output
 
-Save and confirm: "Notes grid saved to `[filename]`. Four rows, ready to fill during sessions."
+Confirm: "Notes grid created: [Google Sheet link]. Four rows, ready to fill during sessions."
 
 ---
 
@@ -59,4 +62,4 @@ Save and confirm: "Notes grid saved to `[filename]`. Four rows, ready to fill du
 
 - Always 4 rows (4 sessions)
 - Column names from the guide, shortened to under 30 characters
-- If the recruit grid exists (`ces-*-recruit.csv`), offer to pre-fill pseudonyms and times
+- If the recruitment Google Sheet exists for this month, offer to pre-fill pseudonyms and times from it
