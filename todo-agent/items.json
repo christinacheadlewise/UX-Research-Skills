@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "text": "Remind CES participants via email about upcoming session",
+    "priority": "high",
+    "due": "2026-05-22",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "2",
+    "text": "Schedule follow-up email to CES participants to be sent day of session",
+    "priority": "high",
+    "due": "2026-05-22",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "9",
+    "text": "Make a summary of all my agents and their uses",
+    "priority": "high",
+    "due": "2026-05-22",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "3",
+    "text": "Review all planning docs",
+    "priority": "high",
+    "due": "2026-05-26",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "7",
+    "text": "Fill out 5/15s doc",
+    "priority": "medium",
+    "due": "2026-05-26",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "4",
+    "text": "Document about diary studies",
+    "priority": "high",
+    "due": "2026-05-29",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "5",
+    "text": "Self assessment",
+    "priority": "high",
+    "due": "2026-05-29",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "8",
+    "text": "Create doc about what data is missing (or decide if I want to do this)",
+    "priority": "low",
+    "due": "2026-05-29",
+    "added": "2026-05-21",
+    "done": false
+  },
+  {
+    "id": "6",
+    "text": "Create account experience show and tell deck",
+    "priority": "high",
+    "due": "2026-05-29",
+    "added": "2026-05-21",
+    "done": false
+  }
+]
