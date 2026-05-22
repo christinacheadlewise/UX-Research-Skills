@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Research Agents</title>
+    <style>
+        :root {
+            --green-900: #163300;
+            --green-700: #2e6b00;
+            --green-500: #9fe870;
+            --green-100: #e8ffd6;
+            --navy-900: #0a1929;
+            --navy-700: #163049;
+            --navy-100: #e3ecf5;
+            --grey-50: #f9fafb;
+            --grey-100: #f3f4f6;
+            --grey-200: #e5e7eb;
+            --grey-400: #9ca3af;
+            --grey-600: #4b5563;
+            --grey-800: #1f2937;
+            --grey-900: #111827;
+            --radius: 12px;
+            --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+            --shadow-lg: 0 4px 16px rgba(0,0,0,0.1), 0 8px 32px rgba(0,0,0,0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--grey-900);
+            background: var(--grey-50);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: var(--navy-900);
+            color: white;
+            padding: 80px 24px 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--grey-400);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--green-500);
+            color: var(--green-900);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+            margin: -40px auto 48px;
+            max-width: 640px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--green-700);
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--grey-600);
+            margin-top: 4px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--grey-900);
+        }
+
+        .section-subtitle {
+            color: var(--grey-600);
+            margin-bottom: 32px;
+            font-size: 1rem;
+        }
+
+        .agent-card {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 32px;
+            overflow: hidden;
+            border: 1px solid var(--grey-200);
+        }
+
+        .agent-header {
+            padding: 24px 28px;
+            border-bottom: 1px solid var(--grey-200);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .agent-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .agent-icon.att { background: #ede9fe; }
+        .agent-icon.uxr { background: #dbeafe; }
+        .agent-icon.todo { background: #d1fae5; }
+
+        .agent-header h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .agent-header p {
+            font-size: 0.9rem;
+            color: var(--grey-600);
+            margin-top: 2px;
+        }
+
+        .skills-grid {
+            padding: 24px 28px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            background: var(--grey-50);
+            border: 1px solid var(--grey-100);
+        }
+
+        .skill-item code {
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: white;
+            border: 1px solid var(--grey-200);
+            padding: 2px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .skill-item span {
+            font-size: 0.875rem;
+            color: var(--grey-600);
+            line-height: 1.4;
+        }
+
+        .sub-section {
+            padding: 0 28px 24px;
+        }
+
+        .sub-section h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--grey-400);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .safeguards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-top: 48px;
+        }
+
+        .safeguard-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--grey-200);
+            border-left: 4px solid var(--green-700);
+        }
+
+        .safeguard-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .safeguard-card p {
+            font-size: 0.875rem;
+            color: var(--grey-600);
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 48px 24px;
+            color: var(--grey-400);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: var(--green-700);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .how-it-works {
+            margin-top: 56px;
+            padding: 40px 28px;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--grey-200);
+        }
+
+        .how-it-works h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .flow-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .flow-step {
+            text-align: center;
+            padding: 16px;
+        }
+
+        .flow-step .step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--green-500);
+            color: var(--green-900);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+
+        .flow-step h4 {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .flow-step p {
+            font-size: 0.8rem;
+            color: var(--grey-600);
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 60px 20px 48px; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: repeat(3, 1fr); margin: -30px 16px 32px; }
+            .stat-card .number { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <span class="badge">Built with Claude Code</span>
+        <h1>UX Research Agents</h1>
+        <p>A suite of AI-powered tools that automate the repetitive parts of qualitative research — from transcript processing to Confluence publishing.</p>
+    </section>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">2</div>
+                <div class="label">Agents</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">12</div>
+                <div class="label">Skills</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">3</div>
+                <div class="label">Safeguards</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Agents</h2>
+        <p class="section-subtitle">Each agent handles a different part of the research workflow.</p>
+
+        <!-- UXR Hub -->
+        <div class="agent-card">
+            <div class="agent-header">
+                <div class="agent-icon uxr">&#x1f4d8;</div>
+                <div>
+                    <h3>UXR Hub — Confluence Page Manager</h3>
+                    <p>Manages User Research Confluence pages — weekly updates, session syncing, study artifacts, and the monthly CES pipeline.</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <code>uxr plan</code>
+                    <span>Writes a research plan and publishes to Confluence</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr grid</code>
+                    <span>Creates a recruitment and screening grid</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr notes</code>
+                    <span>Builds a session notes and observation template</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr guide</code>
+                    <span>Writes a discussion guide (pulls from research plan)</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr analysis</code>
+                    <span>Codes data, surfaces themes, plays devil's advocate</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr slack</code>
+                    <span>Generates an executive summary for Slack and Confluence</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr update</code>
+                    <span>Monday refresh — syncs In Progress, Recently Completed, repository</span>
+                </div>
+                <div class="skill-item">
+                    <code>uxr sessions</code>
+                    <span>Pushes live session info from Slack into "This Week"</span>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h4>CES — Monthly Rolling Research</h4>
+                <div class="skills-grid" style="padding: 0;">
+                    <div class="skill-item">
+                        <code>ces setup</code>
+                        <span>Scaffolds the month's CES round</span>
+                    </div>
+                    <div class="skill-item">
+                        <code>ces guide</code>
+                        <span>Updates the discussion guide's middle questions</span>
+                    </div>
+                    <div class="skill-item">
+                        <code>ces notes</code>
+                        <span>Sets up the session notes document</span>
+                    </div>
+                    <div class="skill-item">
+                        <code>ces summary</code>
+                        <span>Writes up findings from transcripts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- To-Do -->
+        <div class="agent-card">
+            <div class="agent-header">
+                <div class="agent-icon todo">&#x2705;</div>
+                <div>
+                    <h3>To-Do Agent</h3>
+                    <p>Personal task tracker with natural language input, auto-sync to Confluence, and Monday Slack reminders.</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <code>todo add</code>
+                    <span>Parses natural language for task, priority, and due date</span>
+                </div>
+                <div class="skill-item">
+                    <code>todo list</code>
+                    <span>Shows items grouped by priority with due dates</span>
+                </div>
+                <div class="skill-item">
+                    <code>todo sync</code>
+                    <span>Auto-syncs to Confluence after every change</span>
+                </div>
+                <div class="skill-item">
+                    <code>todo push</code>
+                    <span>Sends formatted list to Slack DM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safeguards -->
+        <h2 class="section-title" style="margin-top: 56px;">Safeguards</h2>
+        <p class="section-subtitle">Built-in protections that apply across all agents.</p>
+
+        <div class="safeguards">
+            <div class="safeguard-card">
+                <h4>Wipe Guard</h4>
+                <p>Any Confluence update that would reduce page content by more than 50% is automatically aborted. Born from an incident that wiped 6 pages. No exceptions without explicit override.</p>
+            </div>
+            <div class="safeguard-card">
+                <h4>Draft Before Post</h4>
+                <p>Direct messages to Christina are always sent immediately. Anything going to a channel or another person requires review first.</p>
+            </div>
+            <div class="safeguard-card">
+                <h4>Extreme Clarity</h4>
+                <p>All outputs follow 8 strict rules: brevity, no acronyms, numbered lists, absolute and relative metrics, deep links, explicit units, state changes, proof-read.</p>
+            </div>
+        </div>
+
+        <!-- Personality -->
+        <h2 class="section-title" style="margin-top: 56px;">Trained Personality</h2>
+        <p class="section-subtitle">How I've shaped the way Claude communicates with me across all agents.</p>
+
+        <div class="agent-card">
+            <div class="agent-header">
+                <div class="agent-icon" style="background: #fef3c7;">&#x1f5e3;</div>
+                <div>
+                    <h3>Interaction Style</h3>
+                    <p>Claude acts as my research assistant — I lead, it supports. But supporting means being honest and curious, not just executing.</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span><strong>Southern dialect</strong> — speaks in a warm, southern American accent. Charm, not formality.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>No sycophancy</strong> — no "great question!" or fawning. Direct and honest.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>Challenges me</strong> — pushes back, asks "why" and "what about...", questions assumptions when something seems undercooked.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>Never hallucinate</strong> — if it doesn't know, it says so. No invented facts, no gap-filling with guesses.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>One question at a time</strong> — no dumping a list of four questions in one go.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>Thinking partner</strong> — designed to sharpen my thinking, not just follow instructions.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent-card">
+            <div class="agent-header">
+                <div class="agent-icon" style="background: #ede9fe;">&#x270d;</div>
+                <div>
+                    <h3>Extreme Clarity — Writing Rules</h3>
+                    <p>All generated outputs follow 8 strict rules so every reader leaves with the same understanding, regardless of their role.</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span><strong>1. Prioritise brevity</strong> — fewer words = fewer ambiguity opportunities</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>2. Eliminate acronyms</strong> — define on first use, then abbreviate</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>3. Numbered lists</strong> — force logical ordering, allow precise referencing</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>4. Absolute + relative metrics</strong> — "4 of 10 participants (40%)" not just one or the other</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>5. Deep link for context</strong> — link to the source rather than re-explaining inline</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>6. Qualify units</strong> — always state timeframes, measurement periods, sample sizes</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>7. Highlight state changes</strong> — say what was true before and what's different now</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>8. Proof-read</strong> — if a sentence could be read two ways, rewrite it</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent-card">
+            <div class="agent-header">
+                <div class="agent-icon" style="background: #fce7f3;">&#x1f6a8;</div>
+                <div>
+                    <h3>Communication Guardrails</h3>
+                    <p>Rules for when Claude can send messages externally vs. when it needs my approval.</p>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span><strong>DMs to me</strong> — always fine, send without asking. Used for drafts, reminders, to-do pushes.</span>
+                </div>
+                <div class="skill-item">
+                    <span><strong>Channels or other people</strong> — always show me a draft first and wait for explicit approval before posting.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="how-it-works">
+            <h3>How it works</h3>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-num">1</div>
+                    <h4>Natural language trigger</h4>
+                    <p>Type a command like "att clean" or "uxr plan" in Claude Code</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">2</div>
+                    <h4>Agent routes</h4>
+                    <p>The router reads intent and loads the correct agent and skill instructions</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">3</div>
+                    <h4>Skill executes</h4>
+                    <p>Claude follows the skill's SKILL.md exactly, using MCP tools for Confluence, Slack, and Jira</p>
+                </div>
+                <div class="flow-step">
+                    <div class="step-num">4</div>
+                    <h4>Safeguards check</h4>
+                    <p>Wipe guard, draft review, and clarity rules apply before any external action</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Built by Christina Cheadle, Staff UX Researcher at Wise</p>
+        <p style="margin-top: 8px;">Powered by <a href="https://claude.ai/code" target="_blank">Claude Code</a> + Anthropic Claude</p>
+    </footer>
+</body>
+</html>
