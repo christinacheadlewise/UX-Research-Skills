@@ -21,6 +21,11 @@ Items can be added in natural language. Parse priority and due dates from contex
 - "remind me to review the PRD by Friday" → due = next Friday, priority = medium
 - "urgent: prep interview questions for Tuesday" → due = next Tuesday, priority = high
 - "at some point clean up the CES notes" → due = null, priority = low
+- "EOW" = end of working week = Friday of the current week
+
+**Date verification (MANDATORY):** Before writing any date to `items.json` or rendering a day-of-week on Confluence, run `date -j -f "%Y-%m-%d" "YYYY-MM-DD" "+%A %d %B %Y"` to confirm the day of the week matches. Never guess or calculate days of the week in your head — always verify with the shell. This applies to:
+1. Converting relative dates ("Thursday", "EOW", "next Monday") to ISO dates
+2. Rendering dates on Confluence (e.g. "Friday 29 May" — confirm 29 May is actually a Friday)
 
 ### Completing Items
 
@@ -33,7 +38,7 @@ When Christina says "done with X" or "finished X" or "mark X done":
 
 When Christina says "show my list", "what's on my plate", "todos":
 1. Read `items.json`
-2. Display grouped by priority (high → medium → low), with due dates
+2. Display ordered by due date (soonest first), with priority shown inline
 3. Exclude done items unless she asks for them
 
 ### Syncing to Confluence
@@ -44,7 +49,7 @@ Target page ID: `4127656302` (Christina's personal space, space ID: `4056794091`
 
 On sync:
 1. Read `items.json`
-2. Build an HTML table with columns: Priority, Task, Due, Added, Status
+2. Build an HTML table with columns: Priority, Task, Due — ordered by due date (soonest first)
 3. Apply Wipe Guard (read existing page first, compare lengths)
 4. Update the Confluence page
 
@@ -52,21 +57,16 @@ On sync:
 
 When Christina says "push my todos" or on Monday morning cron:
 1. Read `items.json`
-2. Format as a Slack message grouped by priority
+2. Format as a Slack message ordered by due date (soonest first), with priority emoji inline
 3. DM to Christina directly (no approval needed for DMs to her)
 4. Format:
    ```
-   📋 Your To-Do List (2026-05-21)
+   📋 Your To-Do List (2026-05-26)
    
-   🔴 HIGH
-   • Item text (due: May 23)
-   
-   🟡 MEDIUM  
-   • Item text (due: May 28)
-   • Item text
-   
-   🟢 LOW
-   • Item text
+   • 🔴 Item text (due: Thu 28 May)
+   • 🔴 Item text (due: Fri 29 May)
+   • 🟡 Item text (due: Fri 29 May)
+   • 🟢 Item text
    ```
 
 ## Configuration
