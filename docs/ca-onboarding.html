@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Account Onboarding + Beyond — Executive Summary</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <style>
+    :root {
+      --wise-green: #163300;
+      --wise-lime: #9fe870;
+      --wise-dark: #0a1929;
+    }
+    .reveal { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 26px; }
+    .reveal h1, .reveal h2, .reveal h3 { color: var(--wise-green); font-weight: 700; letter-spacing: -0.02em; }
+    .reveal h1 { font-size: 2.2em; }
+    .reveal h2 { font-size: 1.5em; margin-bottom: 0.6em; }
+    .reveal ul, .reveal ol { text-align: left; display: block; margin-left: 1em; }
+    .reveal li { margin-bottom: 0.5em; line-height: 1.4; }
+    .reveal .subtitle { color: #666; font-size: 0.65em; margin-top: 0.5em; font-weight: 400; }
+    .reveal .meta { font-size: 0.55em; color: #999; margin-top: 2em; }
+
+    .reveal .callout {
+      background: #fff8e1;
+      border-left: 5px solid #ffc107;
+      padding: 0.8em 1.2em;
+      margin: 1em 0;
+      text-align: left;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+
+    .reveal .rec {
+      background: #e8f5e9;
+      border-left: 5px solid #43a047;
+      padding: 0.7em 1.2em;
+      margin: 0.5em 0;
+      text-align: left;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+
+    .reveal .finding {
+      background: #f3f4f6;
+      border-left: 5px solid #6366f1;
+      padding: 0.7em 1.2em;
+      margin: 0.5em 0;
+      text-align: left;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+
+    /* 2x2 Matrix */
+    .matrix-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0.5em;
+    }
+    .matrix-wrapper {
+      position: relative;
+      width: 720px;
+      height: 500px;
+    }
+    .matrix-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      width: 580px;
+      height: 400px;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+    .matrix-cell {
+      border-radius: 10px;
+      padding: 1.2em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .matrix-cell:hover { transform: scale(1.03); }
+    .matrix-cell h4 { margin: 0 0 0.3em 0; font-size: 0.8em; font-weight: 700; color: #1f2937; }
+    .matrix-cell .entry { font-size: 0.6em; color: #4b5563; margin: 0.2em 0; }
+    .matrix-cell .badge { display: inline-block; padding: 0.15em 0.6em; border-radius: 12px; font-size: 0.55em; font-weight: 700; margin-top: 0.4em; }
+
+    .cell-tl { background: #c8e6c9; border: 2px solid #2e7d32; }
+    .cell-tr { background: #fff9c4; border: 2px solid #f9a825; }
+    .cell-bl { background: #ffcdd2; border: 2px solid #c62828; }
+    .cell-br { background: #fff9c4; border: 2px solid #f9a825; }
+
+    .badge-high { background: #2e7d32; color: white; }
+    .badge-partial { background: #f9a825; color: white; }
+    .badge-low { background: #c62828; color: white; }
+
+    .y-label {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: rotate(-90deg) translateX(-50%);
+      transform-origin: center;
+      font-weight: 700;
+      font-size: 0.7em;
+      color: var(--wise-green);
+      white-space: nowrap;
+    }
+    .x-label {
+      position: absolute;
+      bottom: 10px;
+      left: 55%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 0.7em;
+      color: var(--wise-green);
+    }
+    .y-top { position: absolute; left: 70px; top: 30%; font-size: 0.6em; color: #666; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .y-bottom { position: absolute; left: 70px; top: 65%; font-size: 0.6em; color: #666; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .x-left { position: absolute; bottom: 25px; left: 30%; font-size: 0.6em; color: #666; margin-left: 50px; }
+    .x-right { position: absolute; bottom: 25px; left: 70%; font-size: 0.6em; color: #666; margin-left: 50px; }
+
+    .reveal table { font-size: 0.7em; margin: 0.5em auto; border-collapse: collapse; }
+    .reveal table th { background: var(--wise-green); color: white; padding: 0.6em 1em; text-align: left; }
+    .reveal table td { padding: 0.5em 1em; border-bottom: 1px solid #e5e7eb; text-align: left; }
+    .reveal table tr:nth-child(even) td { background: #f9fafb; }
+
+    .slide-number { color: #999 !important; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 1. Title -->
+      <section>
+        <h1>Current Account<br>Onboarding + Beyond</h1>
+        <p class="subtitle">Executive Summary</p>
+        <p class="meta">Christina Cheadle, Staff Design Researcher<br>Consumer Onboarding</p>
+      </section>
+
+      <!-- 2. Context -->
+      <section>
+        <h2>Research Context</h2>
+        <p style="text-align: left; font-size: 0.85em; margin-bottom: 1em;">Wise is expanding into a Current Account to diversify revenue. This research addresses knowledge gaps in CA onboarding, discoverability, and perceived value within users' broader financial ecosystems.</p>
+        <table>
+          <thead><tr><th>Stage</th><th>Method</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Guerrilla interviews + design testing</td><td>Branch pop-up + 14 sessions (30 min)</td></tr>
+            <tr><td>2</td><td>Diary study + follow-ups</td><td>14 days, 8 participants, 60 min interviews</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size: 0.6em; margin-top: 1em; color: #666;"><a href="https://docs.google.com/presentation/d/1kP-GaTDvXNRp4ozaIiTgfZTELH0GwEF08dUoc5vS8zg/edit" style="color: #2e6b00;">Full slide deck</a></p>
+      </section>
+
+      <!-- 3. Branch Pop-Up Findings -->
+      <section>
+        <h2>Branch Pop-Up</h2>
+        <h3 style="font-size: 0.8em; color: #666; font-weight: 400;">High service quality, low product understanding</h3>
+        <div class="finding">Customers were low-intent (came for matcha) — excellent staff pitches drove conversions</div>
+        <div class="finding">In-store materials were ineffective; no demo devices for product education</div>
+        <div class="finding">Staff couldn't answer detailed competitor-comparison questions</div>
+        <div class="finding">Detailed product knowledge was lacking and inaccessible</div>
+      </section>
+
+      <!-- 4. Branch Recommendations -->
+      <section>
+        <h2>Branch Pop-Up: Recommendations</h2>
+        <div class="rec"><strong>1.</strong> Tighten selling propositions for those new to digital banking</div>
+        <div class="rec"><strong>2.</strong> Create dedicated 'feature areas' staffed by product teams</div>
+        <div class="rec"><strong>3.</strong> Provide demos and 'five-minute' pitch sessions for product overview</div>
+      </section>
+
+      <!-- 5. UX Review -->
+      <section>
+        <h2>Principle of Least Astonishment</h2>
+        <p style="text-align: left; font-size: 0.75em; color: #666; margin-bottom: 0.8em;">Users can't find what they're looking for, don't know what to look for, and don't realise things work differently at Wise.</p>
+        <ul style="font-size: 0.8em;">
+          <li>Wise perceived as remittance-only — CA features confuse users</li>
+          <li>Multi-currency mechanics cause anxiety ("what happens if I run out?")</li>
+          <li>Multiple cards model doesn't land with everyday spenders</li>
+          <li>"Assets" and "earn a return" miss mental models — users expect "savings" and "interest"</li>
+          <li>Navigation unintuitive; key features hidden in wrong categories</li>
+        </ul>
+      </section>
+
+      <!-- 6. UX Recommendations -->
+      <section>
+        <h2>UX Recommendations</h2>
+        <div class="rec"><strong>1.</strong> Offer better guidance for products that break the traditional banking mental model</div>
+        <div class="rec"><strong>2.</strong> Separate everyday banking features from travel and remittance in navigation</div>
+      </section>
+
+      <!-- 7. 2x2 Matrix -->
+      <section>
+        <h2>Financial Ecosystems: Four Spender Types</h2>
+        <div class="matrix-container">
+          <div class="matrix-wrapper">
+            <span class="y-label">Engagement Style</span>
+            <span class="x-label">Financial Goal</span>
+            <span class="y-top">Active</span>
+            <span class="y-bottom">Passive</span>
+            <span class="x-left">Sustaining</span>
+            <span class="x-right">Scaling</span>
+            <div class="matrix-grid">
+              <div class="matrix-cell cell-tl">
+                <h4>Everyday Optimisers</h4>
+                <p class="entry">Entry: Insights (money management)</p>
+                <span class="badge badge-high">High potential</span>
+              </div>
+              <div class="matrix-cell cell-tr">
+                <h4>Strategic Maximisers</h4>
+                <p class="entry">Entry: Earn a return, spend abroad</p>
+                <span class="badge badge-partial">Partial</span>
+              </div>
+              <div class="matrix-cell cell-bl">
+                <h4>Simplicity Seekers</h4>
+                <p class="entry">Entry: Spend abroad</p>
+                <span class="badge badge-low">Low potential</span>
+              </div>
+              <div class="matrix-cell cell-br">
+                <h4>Passive Savers</h4>
+                <p class="entry">Entry: Earn a return, spend abroad</p>
+                <span class="badge badge-partial">Partial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Critical Gap -->
+      <section>
+        <h2>Critical Gap</h2>
+        <div class="callout">
+          <strong>Wise is not serving Everyday Optimisers</strong> — the segment with highest loyalty potential. They need money management tools we don't yet offer competitively.
+        </div>
+        <p style="text-align: left; font-size: 0.8em; margin-top: 1em;">The domestic everyday spender has a fractured and diverse financial ecosystem curated over time. Wise's position differs by type.</p>
+      </section>
+
+      <!-- 9. Strategic Recommendations -->
+      <section>
+        <h2>Strategic Recommendations</h2>
+        <div class="rec"><strong>1. Personalisation</strong> — Move away from one-size-fits-all. Help users identify features for their unique needs.</div>
+        <div class="rec"><strong>2. Additional Features</strong> — Build money management tools to anchor Everyday Optimisers. Offer cashback/rewards to attract Strategic Maximisers.</div>
+        <div class="rec"><strong>3. Clarity and Guidance</strong> — Reframe terminology ("interest" not "returns"). Explain multi-currency mechanics. Separate everyday banking from remittance.</div>
+      </section>
+
+      <!-- 10. Further Research -->
+      <section>
+        <h2>Further Research Needed</h2>
+        <ul>
+          <li>International ecosystem mapping across markets</li>
+          <li>Deeper Jobs-to-be-Done framework mapped to features across the organisation</li>
+          <li>Competitor gap analysis per ecosystem type</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      transition: 'slide',
+      controls: true,
+      progress: true,
+      center: true,
+      slideNumber: true
+    });
+  </script>
+</body>
+</html>
