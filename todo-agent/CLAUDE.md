@@ -85,3 +85,4 @@ When Christina says "push my todos" or on Monday morning cron:
 3. Always apply Wipe Guard before updating Confluence
 4. Keep items.json as the source of truth — Confluence is a rendered view
 5. Convert relative dates to absolute dates when saving items
+6. Always verify day-of-week and date alignment before saving or displaying dates. Use a calendar check (e.g., `python3 -c "import datetime; ..."`) to confirm that "Wednesday" actually falls on the date you're writing. Never assume — compute it.

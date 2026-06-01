@@ -43,7 +43,7 @@
     "id": "4",
     "text": "Document about diary studies",
     "priority": "high",
-    "due": "2026-06-05",
+    "due": "2026-06-04",
     "added": "2026-05-21",
     "done": false
   },
@@ -51,7 +51,7 @@
     "id": "5",
     "text": "Self assessment",
     "priority": "high",
-    "due": "2026-06-04",
+    "due": "2026-06-03",
     "added": "2026-05-21",
     "done": false
   },
