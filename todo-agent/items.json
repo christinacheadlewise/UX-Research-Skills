@@ -62,5 +62,29 @@
     "due": "2026-05-29",
     "added": "2026-05-21",
     "done": true
+  },
+  {
+    "id": "10",
+    "text": "Watch town hall",
+    "priority": "medium",
+    "due": "2026-06-05",
+    "added": "2026-06-01",
+    "done": false
+  },
+  {
+    "id": "11",
+    "text": "Watch AI sessions",
+    "priority": "medium",
+    "due": "2026-06-05",
+    "added": "2026-06-01",
+    "done": false
+  },
+  {
+    "id": "12",
+    "text": "Watch Design town hall",
+    "priority": "medium",
+    "due": "2026-06-05",
+    "added": "2026-06-01",
+    "done": false
   }
 ]

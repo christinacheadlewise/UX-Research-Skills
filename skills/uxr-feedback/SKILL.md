@@ -47,9 +47,13 @@ If she says yes (or something affirmative), proceed. If she corrects, update and
 3. Update the page
 4. Confirm: "Logged."
 
-### Step 4: Optional — Sentiment Tag
+### Step 4: Categorise
 
-If the feedback is clearly positive or constructive/critical, you can note it. But don't ask — just infer from the content. Don't categorise ambiguous feedback.
+Place feedback under one of two headings on the Confluence page:
+- **Keep Going** — positive feedback, things that are working well
+- **To Improve** — constructive feedback, things to change or do differently
+
+If it's ambiguous, ask Christina which category it belongs in. Don't guess.
 
 ## Configuration
 
