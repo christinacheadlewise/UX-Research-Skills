@@ -5,7 +5,7 @@
     "priority": "high",
     "due": "2026-05-22",
     "added": "2026-05-21",
-    "done": false
+    "done": true
   },
   {
     "id": "2",
@@ -21,7 +21,7 @@
     "priority": "high",
     "due": "2026-05-22",
     "added": "2026-05-21",
-    "done": false
+    "done": true
   },
   {
     "id": "3",
@@ -29,7 +29,7 @@
     "priority": "high",
     "due": "2026-05-26",
     "added": "2026-05-21",
-    "done": false
+    "done": true
   },
   {
     "id": "7",
@@ -37,13 +37,13 @@
     "priority": "medium",
     "due": "2026-05-26",
     "added": "2026-05-21",
-    "done": false
+    "done": true
   },
   {
     "id": "4",
     "text": "Document about diary studies",
     "priority": "high",
-    "due": "2026-05-29",
+    "due": "2026-06-05",
     "added": "2026-05-21",
     "done": false
   },
@@ -51,15 +51,7 @@
     "id": "5",
     "text": "Self assessment",
     "priority": "high",
-    "due": "2026-05-29",
-    "added": "2026-05-21",
-    "done": false
-  },
-  {
-    "id": "8",
-    "text": "Create doc about what data is missing (or decide if I want to do this)",
-    "priority": "low",
-    "due": "2026-05-29",
+    "due": "2026-06-04",
     "added": "2026-05-21",
     "done": false
   },
@@ -69,6 +61,6 @@
     "priority": "high",
     "due": "2026-05-29",
     "added": "2026-05-21",
-    "done": false
+    "done": true
   }
 ]

@@ -110,26 +110,30 @@ Collect the join/calendar links from Christina.
 
 #### Step 2: Post to Slack
 
-Post to #onboarding-squad-public:
+Post to #onboarding-squad-public (C04KLT41GN5):
 
 ```
-📅 **CES Interviews — Tomorrow ([date])**
+📅 **CES Interviews — Tomorrow ([day] [date])**
 
-Come observe! Here are the session links:
+Come observe! Here are the session links for this month's Customer Effort Score (CES) interviews:
 
-• 2:00pm — [link]
-• 2:30pm — [link]
-• 3:00pm — [link]
-• 3:30pm — [link]
+• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](link)
+• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](link)
+• **[time]** — TBD — link TBD
+...
 
-📝 Want to take notes? Notes doc is here: [Google Sheets link]
+_(Ratings are how each participant scored their onboarding experience on a 1–7 ease scale, where 1 = very difficult)_
 
-Feel free to ping me on Slack during the interviews if you want me to ask something!
+All sessions are on the **Consumer Onboarding calendar**. Check back here for updated links and additional participant details.
 
-💡 **What is this?** Every month I run 4 short interviews with customers who recently completed our Customer Effort Score (CES) survey. It's a chance to hear directly about their onboarding experience. More info: [CES Rolling Research Confluence link]
+🧵 Use this thread to leave any comments or questions during the interviews — if there's something you'd like me to ask, drop it here and I'll work it in!
+
+💡 **What is this?** Every month I run short interviews with customers who recently completed our CES survey about their onboarding experience. It's a chance to hear directly what went well and what didn't.
 ```
 
-Post to **#current-account-onboarding** (search for channel ID via `slack_search_channels` on first use).
+Follow up in thread: _I'll update this thread once remaining participants and links are confirmed._
+
+Links come from UserTesting session URLs (Christina provides these). Include participant drop-off point and country (from Snowflake `INT_FEATURE_FEEDBACK` table) for each confirmed slot. Leave unconfirmed slots as "TBD — link TBD".
 
 #### Step 3: Push to Confluence "This Week"
 
