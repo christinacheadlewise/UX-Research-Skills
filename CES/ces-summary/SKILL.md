@@ -100,17 +100,25 @@ Post a condensed version to #onboarding-squad-public:
 Spoke to [n] customers this month about **[topic]**.
 
 **Key takeaways:**
-• [Finding 1 — one line]
-• [Finding 2 — one line]
-• [Finding 3 — one line]
+[emoji] [Finding 1 — one line]
+[emoji] [Finding 2 — one line]
+[emoji] [Finding 3 — one line]
 
 💬 Best quote:
 > "[Quote]" — P[X]
 
-Full write-up: [Confluence link]
+**Recommendations:**
+[emoji] [Recommendation 1 — one line]
+[emoji] [Recommendation 2 — one line]
+[emoji] [Recommendation 3 — one line]
+
+Full write-up: [embedded Confluence link]
+Watch the recordings: [embedded recordings link]
 
 Questions? Thread below 👇
 ```
+
+Each takeaway AND each recommendation gets its own emoji prefix (choose one that fits — e.g. 💸 funding, ❓ confusion, 🚫 dead-end; ✅ shipped/validated, 🔧 fix, 🆔 identity). Always include the recordings folder link alongside the write-up link. Include a short recommendations list (one line each) — if a recommendation is already validated/shipped by an experiment, note that rather than presenting it as a new ask.
 
 Confirm: "Published to Confluence and posted to Slack."
 
@@ -120,9 +128,10 @@ Confirm: "Published to Confluence and posted to Slack."
 
 1. **Prioritise brevity.** Findings are 2-3 sentences max. Slack version is one line per finding.
 2. **No unexpanded acronyms.** First use: "Customer Effort Score (CES)". Then "CES" is fine.
-3. **Absolute + relative metrics.** "3 of 4 participants (75%)" not "most participants".
+3. **Absolute counts only — NEVER a percentage for participant findings.** Write "3 of 4 participants" — never "75%" or "3 of 4 (75%)". With a sample this small, a percentage reads like a statistic and is misleading; it implies a precision and projectability the data does not have. The ONLY percentages allowed in a CES summary are figures quoted directly from an external, properly-powered source (e.g. an A/B experiment readout), and they must be attributed to that source. This rule has NO exceptions for CES-derived numbers.
 4. **Numbered lists** for findings and recommendations.
-5. **Deep link.** Always include the Confluence page link in Slack posts. Link to related prior CES summaries when referencing patterns.
+5. **Deep link, always embedded.** Always include the Confluence page link AND the session recordings folder link in Slack posts. Link to related prior CES summaries when referencing patterns. ALL links must be embedded behind descriptive text (e.g. "Watch the recordings") — never paste a raw, visible URL.
+9. **Emoji before each Slack takeaway.** Every key-takeaway bullet in the Slack post starts with an emoji that fits the finding. Not in the Confluence write-up — Slack only.
 6. **Explicit units.** Always state sample size ("n = 4"), session length ("30-minute sessions"), and timeframe ("May 2026").
 7. **State changes.** If a finding reinforces or contradicts prior months, say what was known before and what's new.
 8. **Proof-read.** Before presenting, re-read every finding. If it could be interpreted two ways, rewrite it.
