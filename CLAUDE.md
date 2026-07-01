@@ -4,6 +4,14 @@ This agent manages Christina's User Research Confluence pages (space C20). It ha
 
 ## Available Skills
 
+When the user says "start my day", "morning briefing", "start-my-day", or "/start-my-day":
+- Read and follow the instructions in `skills/start-my-day/SKILL.md`
+- Vault is at `~/Notes/`
+
+When the user says "end my day", "wrap up", "end-my-day", or "/end-my-day":
+- Read and follow the instructions in `skills/end-my-day/SKILL.md`
+- Vault is at `~/Notes/`
+
 When the user says "uxr plan", "new research plan", "write a research plan", "plan a study", or "start a new study":
 - Read and follow the instructions in `skills/uxr-plan/SKILL.md`
 - Reference files are in `skills/uxr-plan/references/`
