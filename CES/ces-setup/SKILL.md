@@ -147,6 +147,28 @@ Follow wipe guard rules (read page first, check content length before updating).
 
 Confirm: "Slack posted, Confluence updated."
 
+#### Step 4: Participant Confirmation Email
+
+On session day, Christina sends each participant a confirmation email. Send verbatim (static — do not alter the incentive amount, platform, or session length without her say-so):
+
+```
+Subject: Your Wise feedback session today
+
+Hello,
+
+Thank you for signing up for a Wise feedback session today I'm looking forward to speaking with you!
+
+You should have received a consent form via email. You must sign this before your session begins, if you haven't already done so. If you do not sign it by the beginning of your session, it will be cancelled. Please let me know if you have not received it. The session will be recorded.
+
+You should have also received an invite for the meeting via UserTesting Before joining, please ensure you are in a quiet space where you can focus on the 30-minute call. Either a laptop or a cellphone is fine to join from. It is a video call, and will be expected that you have your camera on.
+
+After the session, I will send you a £50 incentive via Tremendous Rewards.
+
+Speak soon!
+```
+
+Note: verbatim text preserves Christina's phrasing (including the run-on after "today" and "via UserTesting Before joining"). Do not "correct" these unless she asks.
+
 ---
 
 ## Output Standards (Extreme Clarity)
