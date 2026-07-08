@@ -156,7 +156,7 @@ Subject: [Action Required] Wise Feedback Session
 
 Hello,
 
-Thank you for signing up for a Wise feedback session tomorrow I'm looking forward to speaking with you!
+Thank you for signing up for a Wise feedback session tomorrow — I'm looking forward to speaking with you!
 
 You should have received a consent form via email. You must sign this by the beginning of the day (BST) tomorrow, if you haven't already done so. If you do not sign it by then, your session will be cancelled. Please let me know if you have not received it. The session will be recorded.
 
@@ -167,7 +167,7 @@ After the session, I will send you a £50 incentive via Tremendous Rewards.
 Speak soon!
 ```
 
-Note: verbatim text preserves Christina's phrasing (including the run-on after "tomorrow"). Do not "correct" it unless she asks.
+Note: send this text verbatim. Do not reword or "correct" it unless Christina asks.
 
 ---
 
