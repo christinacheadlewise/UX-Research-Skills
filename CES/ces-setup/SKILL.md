@@ -104,9 +104,9 @@ Triggers when Christina says "ces setup" again (or "push ces links", "ces links"
 
 #### Step 1: Collect Links
 
-> "Session links time. Give me the Google Calendar links for each slot (or one link if it's a single event with all four)."
+> "Session links time. For each slot I need two links: the UserTesting join link ('Join to observe') and the Google Calendar 'Add to calendar' link. Give them to me in session-time order."
 
-Collect the join/calendar links from Christina.
+Collect both links per slot from Christina. Every session line gets a "Join to observe" link AND an "Add to calendar" link.
 
 #### Step 2: Post to Slack
 
@@ -117,9 +117,9 @@ Post to #onboarding-squad-public (C04KLT41GN5):
 
 Come observe! Here are the session links for this month's Customer Effort Score (CES) interviews:
 
-• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](link)
-• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](link)
-• **[time]** — TBD — link TBD
+• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](join-link) · [Add to calendar](calendar-link)
+• **[time]** — Rated [score]/7 | Drop-off: [step] | [flag] [country] — [Join to observe](join-link) · [Add to calendar](calendar-link)
+• **[time]** — TBD — links TBD
 ...
 
 _(Ratings are how each participant scored their onboarding experience on a 1–7 ease scale, where 1 = very difficult)_
@@ -133,14 +133,14 @@ All sessions are on the [Consumer Onboarding calendar](https://calendar.google.c
 
 Follow up in thread: _I'll update this thread once remaining participants and links are confirmed._
 
-Links come from UserTesting session URLs (Christina provides these). Include participant drop-off point and country (from Snowflake `INT_FEATURE_FEEDBACK` table) for each confirmed slot. Leave unconfirmed slots as "TBD — link TBD".
+Each slot has two links: the "Join to observe" link (UserTesting session URL) and the "Add to calendar" link (Google Calendar event template URL) — Christina provides both, separated by a `·` on the line. Include participant drop-off point and country (from Snowflake `INT_FEATURE_FEEDBACK` table) for each confirmed slot. Leave unconfirmed slots as "TBD — links TBD".
 
 #### Step 3: Push to Confluence "This Week"
 
 Update the "This Week" panel on the User Research hub page (4125630194):
 
 ```html
-<div data-type="panel-note"><p><strong>CES Interviews — [Day] [Date]</strong></p><p>2:00 / 2:30 / 3:00 / 3:30 — <a href="[link]">Join to observe</a></p><p>Topic this month: [topic from Slack thread]</p></div>
+<div data-type="panel-note"><p><strong>CES Interviews — [Day] [Date]</strong></p><p>2:00 / 2:30 / 3:00 / 3:30 — <a href="[join-link]">Join to observe</a> · <a href="[calendar-link]">Add to calendar</a></p><p>Topic this month: [topic from Slack thread]</p></div>
 ```
 
 Follow wipe guard rules (read page first, check content length before updating).
