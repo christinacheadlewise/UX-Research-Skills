@@ -124,7 +124,7 @@ Come observe! Here are the session links for this month's Customer Effort Score 
 
 _(Ratings are how each participant scored their onboarding experience on a 1–7 ease scale, where 1 = very difficult)_
 
-All sessions are on the **Consumer Onboarding calendar**. Check back here for updated links and additional participant details.
+All sessions are on the [Consumer Onboarding calendar](https://calendar.google.com/calendar/u/0?cid=dHJhbnNmZXJ3aXNlLmNvbV9ub2g1dTc2ajN1bzIzZGxrNWY4dnUwanNxa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t). Check back here for updated links and additional participant details.
 
 🧵 Use this thread to leave any comments or questions during the interviews — if there's something you'd like me to ask, drop it here and I'll work it in!
 
