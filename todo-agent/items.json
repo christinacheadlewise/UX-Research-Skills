@@ -1,218 +1,136 @@
 [
   {
-    "id": "1",
-    "text": "Remind CES participants via email about upcoming session",
+    "id": "share-interview-schedule",
+    "text": "Share interview schedule",
     "priority": "high",
-    "due": "2026-05-22",
-    "added": "2026-05-21",
-    "done": true
+    "due": "2026-07-23",
+    "added": "2026-07-22",
+    "done": true,
+    "completed": "2026-07-24"
   },
   {
-    "id": "2",
-    "text": "Schedule follow-up email to CES participants to be sent day of session",
+    "id": "give-jess-feedback",
+    "text": "Give Jess feedback",
     "priority": "high",
-    "due": "2026-05-22",
-    "added": "2026-05-21",
-    "done": true
+    "due": "2026-07-27",
+    "added": "2026-07-22",
+    "done": true,
+    "completed": "2026-07-27"
   },
   {
-    "id": "3",
-    "text": "Review all planning docs",
-    "priority": "high",
-    "due": "2026-05-26",
-    "added": "2026-05-21",
-    "done": true
-  },
-  {
-    "id": "4",
-    "text": "Document about diary studies",
-    "priority": "high",
-    "due": "2026-06-04",
-    "added": "2026-05-21",
-    "done": true
-  },
-  {
-    "id": "5",
-    "text": "Self assessment",
-    "priority": "high",
-    "due": "2026-06-03",
-    "added": "2026-05-21",
-    "done": true
-  },
-  {
-    "id": "6",
-    "text": "Create account experience show and tell deck",
-    "priority": "high",
-    "due": "2026-05-29",
-    "added": "2026-05-21",
-    "done": true
-  },
-  {
-    "id": "7",
-    "text": "Fill out 5/15s doc",
+    "id": "check-survey",
+    "text": "Check survey",
     "priority": "medium",
-    "due": "2026-05-26",
-    "added": "2026-05-21",
-    "done": true
+    "due": "2026-07-30",
+    "added": "2026-07-24",
+    "done": true,
+    "completed": "2026-07-31"
   },
   {
-    "id": "9",
-    "text": "Make a summary of all my agents and their uses",
-    "priority": "high",
-    "due": "2026-05-22",
-    "added": "2026-05-21",
-    "done": true
-  },
-  {
-    "id": "10",
-    "text": "Watch town hall",
+    "id": "loop-slack-channel",
+    "text": "Create a Slack channel for Loop (Loop UX — Spain project agency)",
     "priority": "medium",
-    "due": "2026-06-05",
-    "added": "2026-06-01",
-    "done": true
+    "due": "2026-07-17",
+    "added": "2026-07-08",
+    "done": true,
+    "completed": "2026-07-31"
   },
   {
-    "id": "11",
-    "text": "Watch AI sessions",
-    "priority": "medium",
-    "due": "2026-06-05",
-    "added": "2026-06-01",
-    "done": true
-  },
-  {
-    "id": "12",
-    "text": "Watch Design town hall",
-    "priority": "medium",
-    "due": "2026-06-05",
-    "added": "2026-06-01",
-    "done": true
-  },
-  {
-    "id": "13",
-    "text": "Research roadmap",
-    "priority": "high",
-    "due": "2026-06-05",
-    "added": "2026-06-03",
-    "done": true
-  },
-  {
-    "id": "14",
-    "text": "Update MCPs (HTTP+SSE endpoint deprecated after 30 June 2026 — move to Streamable HTTP)",
-    "priority": "medium",
-    "due": "2026-06-30",
-    "added": "2026-06-03",
-    "done": true
-  },
-  {
-    "id": "15",
-    "text": "Catch up on all Slack",
+    "id": "notify-divya-canada-trip",
+    "text": "[Peter 1:1] Notify Divya about the planned Canada trip; verify her availability + visa status",
     "priority": "medium",
     "due": null,
-    "added": "2026-06-15",
-    "done": true
+    "added": "2026-07-22",
+    "done": true,
+    "completed": "2026-07-31"
   },
   {
-    "id": "16",
-    "text": "Scope all research projects (Q3 roadmap)",
-    "priority": "high",
-    "due": "2026-07-01",
-    "added": "2026-06-15",
-    "done": true
-  },
-  {
-    "id": "17",
-    "text": "Spain Launch — research plan published to Confluence",
-    "priority": "high",
-    "due": "2026-07-01",
-    "added": "2026-06-25",
-    "done": true
-  },
-  {
-    "id": "18",
-    "text": "Spain Launch — RFQ sent to agencies",
-    "priority": "high",
-    "due": "2026-07-02",
-    "added": "2026-06-25",
-    "done": true
-  },
-  {
-    "id": "19",
-    "text": "Send research plan + timeline to Maxim (Spain Launch)",
-    "priority": "high",
-    "due": "2026-07-02",
-    "added": "2026-07-02",
-    "done": false
-  },
-  {
-    "id": "20",
-    "text": "Agency RFQ — chase quotes from Loop, Askable, Fieldworkhub",
-    "priority": "high",
-    "due": "2026-07-03",
-    "added": "2026-07-02",
-    "done": false
-  },
-  {
-    "id": "21",
-    "text": "Watch Global Product Tribe, team + account team squad videos",
-    "priority": "medium",
-    "due": "2026-07-03",
-    "added": "2026-07-02",
-    "done": true
-  },
-  {
-    "id": "22",
-    "text": "Draft discussion guide + screener for Spain project",
-    "priority": "high",
-    "due": "2026-07-07",
-    "added": "2026-07-02",
-    "done": false
-  },
-  {
-    "id": "23",
-    "text": "Start English interviews (Spain — UK/US expat cohort)",
-    "priority": "high",
-    "due": "2026-07-13",
-    "added": "2026-07-02",
-    "done": false
-  },
-  {
-    "id": "24",
-    "text": "Contact Cecile via LinkedIn",
+    "id": "ces-recruitment-plan-doc",
+    "text": "[Peter 1:1] Document CES interview recruitment plan — current situation + forward-looking (shift from CES pop-ups to opt-in + email)",
     "priority": "medium",
     "due": null,
-    "added": "2026-07-02",
-    "done": false
+    "added": "2026-07-22",
+    "done": true,
+    "completed": "2026-07-31"
   },
   {
-    "id": "25",
-    "text": "Check with Pete re: new researcher onboarding Confluence page",
+    "id": "pick-winner-survey",
+    "text": "Pick winner for survey",
     "priority": "medium",
-    "due": null,
-    "added": "2026-07-02",
+    "due": "2026-08-01",
+    "added": "2026-07-24",
     "done": false
   },
   {
-    "id": "26",
-    "text": "Join lifecycle analysis — review docs + identify research gaps",
+    "id": "review-grad-lead-docs",
+    "text": "Review docs about being a grad lead",
     "priority": "medium",
-    "due": null,
-    "added": "2026-07-02",
+    "due": "2026-08-03",
+    "added": "2026-07-31",
     "done": false
   },
   {
-    "id": "27",
+    "id": "pay-loop",
+    "text": "Pay Loop",
+    "priority": "medium",
+    "due": "2026-08-03",
+    "added": "2026-07-31",
+    "done": false
+  },
+  {
+    "id": "analyse-spanish-interviews",
+    "text": "Analyse Spanish interviews",
+    "priority": "medium",
+    "due": "2026-08-05",
+    "added": "2026-07-31",
+    "done": false
+  },
+  {
+    "id": "triple-i-insight-risk-framework",
+    "text": "[Triple I] Insight risk framework — answer key Q: when an insight comes back out, how do we show what it's safe to be used for? Deliverables (mine): confidence/risk labels + warnings on directional/outdated research + tangible next-steps.",
+    "priority": "medium",
+    "due": "2026-08-07",
+    "added": "2026-07-22",
+    "done": false
+  },
+  {
+    "id": "analyse-survey",
+    "text": "Analyse survey",
+    "priority": "medium",
+    "due": "2026-08-07",
+    "added": "2026-07-31",
+    "done": false
+  },
+  {
+    "id": "plan-canada-research-trip",
     "text": "Plan Canada research trip (mid-Sep to mid-Oct)",
     "priority": "medium",
-    "due": null,
+    "due": "2026-08-07",
     "added": "2026-07-02",
     "done": false
   },
   {
-    "id": "28",
-    "text": "CES round 2 interviews — prep once Andrea back + feature flag on",
+    "id": "recruit-english-speakers-spain",
+    "text": "Recruit more English speakers for Spain research (UK/US expat cohort — newer arrivals still needed)",
+    "priority": "high",
+    "due": null,
+    "added": "2026-07-22",
+    "done": false
+  },
+  {
+    "id": "cecile-onboarding-page",
+    "text": "Create an onboarding page for Cecile (new grad researcher, starts 7 Sep) — pending Pete's decision on scope/level; per Divya, a page of specific research questions to give her immediate projects. Also: build a list of all Claude Code permissions I've requested (from settings.json allow-list) so they can be pre-set for Cecile + new hires.",
+    "priority": "medium",
+    "due": "2026-09-07",
+    "added": "2026-07-08",
+    "done": false
+  },
+  {
+    "id": "review-personalised-experience-onboarding",
+    "text": "Review [for feedback] Dimensions of a personalised experience in Onboarding (https://transferwise.atlassian.net/wiki/spaces/CCR/pages/4153838123) and give feedback",
     "priority": "medium",
     "due": null,
-    "added": "2026-07-02",
+    "added": "2026-07-22",
     "done": false
   }
 ]
