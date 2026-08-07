@@ -59,7 +59,8 @@
     "priority": "medium",
     "due": "2026-08-01",
     "added": "2026-07-24",
-    "done": false
+    "done": true,
+    "completed": "2026-08-07"
   },
   {
     "id": "review-grad-lead-docs",
@@ -99,7 +100,8 @@
     "priority": "medium",
     "due": "2026-08-07",
     "added": "2026-07-31",
-    "done": false
+    "done": true,
+    "completed": "2026-08-07"
   },
   {
     "id": "plan-canada-research-trip",
@@ -107,7 +109,8 @@
     "priority": "medium",
     "due": "2026-08-07",
     "added": "2026-07-02",
-    "done": false
+    "done": true,
+    "completed": "2026-08-07"
   },
   {
     "id": "recruit-english-speakers-spain",
