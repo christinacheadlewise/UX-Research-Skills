@@ -66,7 +66,7 @@
     "id": "review-grad-lead-docs",
     "text": "Review docs about being a grad lead",
     "priority": "medium",
-    "due": "2026-08-03",
+    "due": "2026-08-10",
     "added": "2026-07-31",
     "done": false
   },
@@ -74,7 +74,7 @@
     "id": "pay-loop",
     "text": "Pay Loop",
     "priority": "medium",
-    "due": "2026-08-03",
+    "due": "2026-08-10",
     "added": "2026-07-31",
     "done": false
   },
@@ -82,7 +82,7 @@
     "id": "analyse-spanish-interviews",
     "text": "Analyse Spanish interviews",
     "priority": "medium",
-    "due": "2026-08-05",
+    "due": "2026-08-10",
     "added": "2026-07-31",
     "done": false
   },
@@ -90,7 +90,7 @@
     "id": "triple-i-insight-risk-framework",
     "text": "[Triple I] Insight risk framework — answer key Q: when an insight comes back out, how do we show what it's safe to be used for? Deliverables (mine): confidence/risk labels + warnings on directional/outdated research + tangible next-steps.",
     "priority": "medium",
-    "due": "2026-08-07",
+    "due": "2026-08-10",
     "added": "2026-07-22",
     "done": false
   },
@@ -111,14 +111,6 @@
     "added": "2026-07-02",
     "done": true,
     "completed": "2026-08-07"
-  },
-  {
-    "id": "recruit-english-speakers-spain",
-    "text": "Recruit more English speakers for Spain research (UK/US expat cohort — newer arrivals still needed)",
-    "priority": "high",
-    "due": null,
-    "added": "2026-07-22",
-    "done": false
   },
   {
     "id": "cecile-onboarding-page",
