@@ -68,7 +68,8 @@
     "priority": "medium",
     "due": "2026-08-10",
     "added": "2026-07-31",
-    "done": false
+    "done": true,
+    "completed": "2026-08-07"
   },
   {
     "id": "pay-loop",
