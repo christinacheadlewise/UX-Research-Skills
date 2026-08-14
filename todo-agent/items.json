@@ -168,9 +168,9 @@
   },
   {
     "id": "create-regional-research-playbook",
-    "text": "Create a regional research playbook",
-    "priority": "medium",
-    "due": null,
+    "text": "Create a regional research playbook (stretch goal)",
+    "priority": "low",
+    "due": "2026-08-21",
     "added": "2026-08-14",
     "done": false
   },
