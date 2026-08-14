@@ -167,6 +167,14 @@
     "done": false
   },
   {
+    "id": "create-regional-research-playbook",
+    "text": "Create a regional research playbook",
+    "priority": "medium",
+    "due": null,
+    "added": "2026-08-14",
+    "done": false
+  },
+  {
     "id": "review-personalised-experience-onboarding",
     "text": "Review [for feedback] Dimensions of a personalised experience in Onboarding (https://transferwise.atlassian.net/wiki/spaces/CCR/pages/4153838123) and give feedback",
     "priority": "medium",
