@@ -129,7 +129,7 @@
     "id": "cecile-onboarding-page",
     "text": "Create an onboarding page for Cecile (new grad researcher, starts 7 Sep) — pending Pete's decision on scope/level; per Divya, a page of specific research questions to give her immediate projects. Also: build a list of all Claude Code permissions I've requested (from settings.json allow-list) so they can be pre-set for Cecile + new hires.",
     "priority": "medium",
-    "due": "2026-09-07",
+    "due": "2026-08-21",
     "added": "2026-07-08",
     "done": false
   },
