@@ -95,7 +95,8 @@
     "priority": "medium",
     "due": "2026-08-11",
     "added": "2026-08-07",
-    "done": false
+    "done": true,
+    "completed": "2026-08-14"
   },
   {
     "id": "triple-i-insight-risk-framework",
@@ -103,7 +104,8 @@
     "priority": "medium",
     "due": "2026-08-13",
     "added": "2026-07-22",
-    "done": false
+    "done": true,
+    "completed": "2026-08-14"
   },
   {
     "id": "analyse-survey",
@@ -145,7 +147,8 @@
     "priority": "medium",
     "due": "2026-08-13",
     "added": "2026-08-07",
-    "done": false
+    "done": true,
+    "completed": "2026-08-14"
   },
   {
     "id": "review-personalised-experience-onboarding",
