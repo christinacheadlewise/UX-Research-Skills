@@ -181,6 +181,7 @@
     "priority": "medium",
     "due": null,
     "added": "2026-07-22",
-    "done": false
+    "done": true,
+    "completed": "2026-08-19"
   }
 ]
