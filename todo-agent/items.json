@@ -139,7 +139,8 @@
     "priority": "medium",
     "due": "2026-08-14",
     "added": "2026-08-07",
-    "done": false
+    "done": true,
+    "completed": "2026-08-19"
   },
   {
     "id": "prep-ai-office-hours",
