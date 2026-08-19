@@ -160,6 +160,14 @@
     "done": false
   },
   {
+    "id": "send-rfqs-to-agencies",
+    "text": "Send RFQs to agencies",
+    "priority": "medium",
+    "due": "2026-08-21",
+    "added": "2026-08-19",
+    "done": false
+  },
+  {
     "id": "create-canada-plan",
     "text": "Create Canada plan",
     "priority": "medium",
