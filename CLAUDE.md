@@ -4,6 +4,10 @@ This agent manages Christina's User Research Confluence pages (space C20). It ha
 
 ## Available Skills
 
+When the user says "todo add", "add to my list", "to do", "todo list", "show my list", "what's on my plate", "push my todos", "mark X done", or clearly states a task to track:
+- Read and follow the instructions in `skills/todo/SKILL.md`
+- Source of truth is `skills/todo/items.json` — no Confluence sync
+
 When the user says "start my day", "morning briefing", "start-my-day", or "/start-my-day":
 - Read and follow the instructions in `skills/start-my-day/SKILL.md`
 - Vault is at `~/Notes/`

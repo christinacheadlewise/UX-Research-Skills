@@ -129,7 +129,7 @@
     "id": "cecile-onboarding-page",
     "text": "Create an onboarding page for Cecile (new grad researcher, starts 7 Sep) — pending Pete's decision on scope/level; per Divya, a page of specific research questions to give her immediate projects. Also: build a list of all Claude Code permissions I've requested (from settings.json allow-list) so they can be pre-set for Cecile + new hires.",
     "priority": "medium",
-    "due": "2026-08-21",
+    "due": "2026-08-28",
     "added": "2026-07-08",
     "done": false
   },
@@ -157,13 +157,14 @@
     "priority": "medium",
     "due": "2026-08-19",
     "added": "2026-08-14",
-    "done": false
+    "done": true,
+    "completed": "2026-08-21"
   },
   {
     "id": "send-rfqs-to-agencies",
     "text": "Send RFQs to agencies",
     "priority": "medium",
-    "due": "2026-08-21",
+    "due": "2026-08-24",
     "added": "2026-08-19",
     "done": false
   },
@@ -179,7 +180,7 @@
     "id": "create-regional-research-playbook",
     "text": "Create a regional research playbook (stretch goal)",
     "priority": "low",
-    "due": "2026-08-21",
+    "due": "2026-08-28",
     "added": "2026-08-14",
     "done": false
   },
