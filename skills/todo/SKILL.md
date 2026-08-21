@@ -5,7 +5,7 @@ description: Manage Christina's personal to-do list — add, complete, edit, vie
 
 # To-Do List Skill
 
-Manages Christina's personal to-do list. **`items.json` in this skill folder is the single source of truth.** There is no Confluence sync — the old Confluence page has been retired. The list can still be pushed to her Slack DM on demand or on the Monday morning cron.
+Manages Christina's personal to-do list. **`items.json` in this skill folder is the single source of truth.** There is no Confluence sync — the old Confluence page has been retired. The list can be pushed to her Slack DM on demand ("push my todos"). There is no scheduled cron.
 
 Data file: `skills/todo/items.json` (relative to the repo root, `~/dev/uxr-hub`).
 
@@ -61,7 +61,7 @@ Relative-date shorthands: "EOW" = end of working week = Friday of the current we
 3. Only show completed items if she asks for them.
 
 ### Push to Slack
-When she says "push my todos" or on the Monday cron:
+When she says "push my todos" (on demand only — no scheduled cron):
 1. Read `items.json`.
 2. Format active items ordered by due date (soonest first), priority emoji inline (🔴 high / 🟡 medium / 🟢 low).
 3. DM Christina directly (christina.cheadle@wise.com) — no approval needed for DMs to her.

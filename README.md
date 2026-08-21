@@ -30,9 +30,9 @@ Manages User Research Confluence pages: weekly updates, session syncing, study a
 | `ces notes` | Sets up the session notes document |
 | `ces summary` | Writes up findings from transcripts |
 
-### To-Do Agent
+### To-Do Skill
 
-Personal task tracker with natural language input. Parses priority and due dates from conversational commands, auto-syncs to a Confluence page, and sends a formatted Slack DM every Monday morning.
+Personal task tracker with natural language input (`skills/todo`). Parses priority and due dates from conversational commands. Source of truth is `skills/todo/items.json`. Can push a formatted Slack DM on demand ("push my todos").
 
 ## Safeguards
 
